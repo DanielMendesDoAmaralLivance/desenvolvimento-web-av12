@@ -11,9 +11,13 @@ export const VeiculosPage = () => {
 
   useEffect(() => {
     window.document.title = "Veículos";
+    listar();
+  }, []);
+
+  const listar = () => {
     setData(getVeiculos());
     setQtdVagas(getQtdVagas());
-  }, []);
+  };
 
   const editar = (id) => {
     const resposta = window.confirm(`Você quer editar #${id}?`);
@@ -95,12 +99,10 @@ export const VeiculosPage = () => {
           <div className="vagas-section-container" id="vagas-section-container">
             {qtdVagas &&
               data &&
-              Array.from({ length: qtdVagas  }).map((_, vaga) => {
+              Array.from({ length: qtdVagas }).map((_, vaga) => {
                 const vagaOcupada = data.some(
                   (x) => x.numeroDaVagaDeEstacionamento === vaga
                 );
-
-                console.log(vaga)
 
                 return vagaOcupada ? (
                   <div className="vaga indisponivel" key={vaga}>
