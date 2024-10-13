@@ -1,0 +1,71 @@
+main section.veiculos-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main table#veiculos-table {
+  padding: 20px;
+  background-color: #9dbab5;
+  border-radius: 20px;
+}
+
+main table#veiculos-table th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+main table#veiculos-table td i {
+  cursor: pointer;
+}
+
+main table#veiculos-table td i.fa-pencil {
+  color: #007bff;
+}
+
+main table#veiculos-table td i.fa-trash {
+  color: red;
+}
+
+main .vagas-section-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30px);
+  grid-gap: 10px;
+  width: 100%;
+  padding: 20px;
+  background-color: #9dbab5;
+  border-radius: 20px;
+}
+
+main .vagas-section-container .vaga {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+main .vagas-section-container .vaga.disponivel {
+  background-color: green;
+}
+
+main .vagas-section-container .vaga.indisponivel {
+  background-color: red;
+}
+
+main aside.legenda-vagas {
+  margin: 20px 0;
+}
+
+main aside.legenda-vagas span.indisponivel {
+  color: red;
+  font-weight: bold;
+}
+
+main aside.legenda-vagas span.disponivel {
+  color: green;
+  font-weight: bold;
+}

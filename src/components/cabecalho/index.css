@@ -1,0 +1,24 @@
+header.menu {
+  background-color: #a7b5c3;
+  padding: 1rem;
+}
+
+header.menu nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+header.menu nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+header.menu nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #007bff;
+  font-size: 1.2rem;
+}

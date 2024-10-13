@@ -1,0 +1,42 @@
+section.inserir-um-veiculo-form-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+form#inserir-um-veiculo-form {
+  padding: 20px;
+  background-color: #9dbab5;
+  border-radius: 20px;
+}
+
+form#inserir-um-veiculo-form label {
+  font-weight: bold;
+  display: block;
+}
+
+form#inserir-um-veiculo-form input {
+  width: 100%;
+}
+
+form#inserir-um-veiculo-form div {
+  margin-bottom: 5px;
+}
+
+form#inserir-um-veiculo-form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+form#inserir-um-veiculo-form button:hover {
+  background-color: #007bffa7;
+  cursor: pointer;
+}
